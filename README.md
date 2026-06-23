@@ -1,73 +1,103 @@
-# React + TypeScript + Vite
+# 📚 Attendance Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive Attendance Tracker built with React and TypeScript that helps students calculate their attendance percentage and determine how many classes they can miss or need to attend to maintain the required attendance threshold.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Calculate attendance percentage instantly
+* Prevent invalid inputs
 
-## React Compiler
+  * Negative values are not allowed
+  * Attended classes cannot exceed total classes
+* Attendance status indicators
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * 🟢 Safe
+  * 🟡 Warning
+  * 🔴 Critical
+* Progress bar visualization
+* Calculation history using Local Storage
+* Responsive design for desktop and mobile devices
+* Reset functionality
+* Built for Digital Heroes assignment
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Vite
+* CSS / Tailwind CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📊 How It Works
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Enter the total number of classes conducted.
+2. Enter the number of classes attended.
+3. Click **Calculate**.
+4. View:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+   * Attendance Percentage
+   * Attendance Status
+   * Recommendation Message
+
+## 🎯 Example
+
+Total Classes: 100
+
+Classes Attended: 80
+
+Attendance: 80%
+
+Status: Safe
+
+You can miss additional classes while maintaining the required attendance percentage.
+
+## 💻 Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd Attendance_Tracker
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## 🌐 Live Demo
+
+https://attendance-tracker-one-orcin.vercel.app/
+
+## 📂 GitHub Repository
+
+https://github.com/Samiksha22911/Attendance_Tracker
+
+## 👩‍💻 Author
+
+**Samiksha Sharma**
+
+Email: [sharmasamiksha189@gmail.com](mailto:sharmasamiksha189@gmail.com)
+
+## 🔗 Digital Heroes
+
+This project was created as part of the Digital Heroes Developer Trial Task.
+
+https://digitalheroesco.com
